@@ -1,0 +1,180 @@
+.service{
+    width: 100%;
+    padding: 7rem 10rem;
+    background-image: linear-gradient(#021731, #000000ad), url(img/picca.jpg);
+
+
+
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    top: 5rem;
+    position: relative;
+
+       @media (max-width:26.75em){
+        border-radius: 0rem;
+        top: 2rem;
+        padding: 3rem 1rem;
+    }
+
+    
+    &__con{
+     width: 50%;
+
+            @media (max-width:26.75em){
+            width: 100%;
+            }
+
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #ffc000;
+    }
+
+    &__para{
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+.s-card{
+    display: flex;
+    justify-content: space-between;
+    top: 10rem;
+    position: relative;
+
+    &:nth-child(5){
+        margin-bottom: 30rem;
+    }
+        
+    @media (max-width:26.75em){
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        &:nth-child(5){
+            margin-bottom: 10rem;
+        }
+          
+        }
+
+
+    &__con{
+        width: 35%;
+        margin:1rem;
+        background-color: whitesmoke;
+        // background-color: rgba(14, 12, 12, 0.932);
+        border-radius: 1.8rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size: cover;
+
+        @media (max-width:26.75em){
+          width: 100%;
+            }
+    
+    }
+
+      
+    &__con:hover > &__box{
+       display: flex;
+
+    }
+
+    &__img{
+        width: 10rem;
+        // height: 12rem;
+        margin: 4rem;
+    }
+
+    &__box{
+        position: relative;
+        // background-color: rgb(240, 238, 220);
+        background-color: #8c8b9e14;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1.5rem;
+         animation: slideup 0.4s ease-in-out;
+        // display: none;
+    }
+    &__title{
+        font-size: 1.7rem;
+         margin-bottom: 1rem;
+         font-weight: 600;
+         letter-spacing: .2rem;
+         text-transform: uppercase;
+         color: rgb(145, 116, 62);
+         text-align: center;
+    }
+
+    &__text{
+        font-size: 1.4rem;
+        text-align: center;
+        color: black;
+    }
+
+    &__btn{
+        padding: 1rem 6rem;
+        margin-top: 1.5rem;
+        border-radius: .5rem;
+        border: none;
+        // background-color: rgb(255, 208, 0);
+    // background-image: linear-gradient(#021731, #000000);
+    background-color: rgb(19, 28, 35);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        cursor: pointer;
+        outline: none;
+        transition: ease-in-out 0.3s;
+
+        &:hover{
+            background-color: rgb(98, 101, 105);
+        }
+
+        &:active{
+            margin-left: 0rem;
+        }
+       
+    }
+
+    
+    &__btn-text{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    &__next{
+        font-size: 2rem;
+        position: relative;
+        opacity: 100%;
+        right: -5rem;
+        top:0rem;
+        color: rgb(255, 174, 0);
+        display: block;
+        cursor: pointer;
+
+    }
+
+}

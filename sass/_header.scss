@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: white;
+    padding: 2rem 1rem;
+    margin: 0rem 15rem;
+
+    @media (max-width:87.50em){
+        margin: 0rem 10rem;
+    }
+    // @media (max-width: 75em){
+    //     padding: 1rem 6rem;
+    // }
+    @media (max-width:56.25em){
+        margin: 0rem 5rem;
+    }
+    @media (max-width: 37.50em){
+        margin: 0rem 0rem;
+    }
+
+
+
+    &__logo{
+        position: relative;
+        height: 5.5rem;
+        display: block;
+        // top: 2rem;
+
+
+      
+        @media (max-width:37.50em){
+            left: 2rem;
+         }
+    }
+    &__item{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-self: start;
+        position: relative;
+        width: 100%;
+        top: 2rem;
+
+        @media (max-width:56.25em){
+            display: none;
+        }
+    }
+    &__link{
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+        color: rgba(0, 0, 0, 0.809);
+        text-decoration: none;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+        font-weight: 500;
+
+        &:hover{
+            text-decoration: underline;
+            color: rgb(164, 131, 54);
+           
+        }
+    }
+}
